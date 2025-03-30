@@ -132,8 +132,8 @@ const TimerApp: React.FC = () => {
             <input className="player-name" value={player2Name} onChange={(e) => setPlayer2Name(e.target.value)} />
           </div>
           <div className="score-container">
-            <h3>{player1Name}: {player1Score}</h3>
-            <h3>{player2Name}: {player2Score}</h3>
+            <h1>{player1Name}: {player1Score}</h1>
+            <h1>{player2Name}: {player2Score}</h1>
           </div>
           <div className="score-buttons" style={{ display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '10px' }}>
             {[{points: 1, color: 'red'}, {points: 2, color: 'yellow'}, {points: 3, color: 'green'}, {points: 4, color: 'brown'}, {points: 5, color: 'blue'}, {points: 6, color: 'pink'}, {points: 7, color: 'black'}].map(({points, color}) => (
